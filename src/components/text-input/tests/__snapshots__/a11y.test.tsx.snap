@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default text input a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: Label
+    children:
+      -
+        role: text
+        name: test
+      -
+        role: textbox
+        name: test
+"
+`;
