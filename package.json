@@ -37,7 +37,8 @@
     "babel-loader": "8.0.5",
     "commitizen": "^3.1.1",
     "cz-conventional-changelog": "2.1.0",
-    "husky": "^2.3.0"
+    "husky": "^2.3.0",
+    "jest-dom": "^3.4.0"
   },
   "publishConfig": {
     "access": "restricted"
