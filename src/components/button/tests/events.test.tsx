@@ -8,7 +8,7 @@ test('can handle click events', () => {
 
   fireEvent.click(getByText('test button'))
 
-  expect(onClick).toHaveBeenCalledTimes(1)
+  expect(onClick.mock.calls).toEqual([[]])
 })
 
 test('click handler is optional', () => {

@@ -15,8 +15,8 @@ const StyledButton = styled.button`
   padding: 10px;
 `
 
-const Button: FC<ButtonProps> = ({ onClick, children }) => (
-  <StyledButton type="button" onClick={onClick}>
+const Button: FC<ButtonProps> = ({ onClick = () => {}, children }) => (
+  <StyledButton type="button" onClick={() => onClick()}>
     {children}
   </StyledButton>
 )
