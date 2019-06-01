@@ -36,6 +36,7 @@ const StyledTextInput = styled.input`
 const StyledLabelSpan = styled.span`
   font-size: 24px;
   left: 0;
+  pointer-events: none;
   position: absolute;
   top: 0;
   transform-origin: top left;
