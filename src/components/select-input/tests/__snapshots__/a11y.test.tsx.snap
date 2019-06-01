@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default select input a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: Label
+    children:
+      -
+        role: text
+        name: test
+      -
+        role: combobox
+        name: test
+        value: A
+        children:
+          -
+            role: MenuListPopup
+            children:
+              -
+                role: menuitem
+                name: A
+                selected: true
+              -
+                role: menuitem
+                name: B
+              -
+                role: menuitem
+                name: C
+"
+`;
