@@ -7,10 +7,10 @@ children:
     role: Label
     children:
       -
-        role: text
+        role: textbox
         name: test
       -
-        role: textbox
+        role: text
         name: test
 "
 `;
