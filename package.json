@@ -13,6 +13,8 @@
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "storybook": "start-storybook -p 6006",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "test": "react-scripts test"
   },
   "dependencies": {
@@ -41,7 +43,9 @@
     "jest-component-snapshot": "^0.1.2",
     "jest-dom": "^3.4.0",
     "puppeteer": "^1.17.0",
+    "react-docgen-typescript": "^1.12.4",
     "react-scripts": "3.0.1",
+    "react-styleguidist": "^9.1.2",
     "typescript": "3.5.1"
   },
   "publishConfig": {
