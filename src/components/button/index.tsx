@@ -5,7 +5,9 @@ type ButtonProps = {
 }
 
 const Button: FC<ButtonProps> = ({ onClick, children }) => (
-  <button onClick={onClick}>{children}</button>
+  <button type="button" onClick={onClick}>
+    {children}
+  </button>
 )
 
 export default Button
