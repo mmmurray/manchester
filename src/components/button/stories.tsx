@@ -1,7 +1,8 @@
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
+import Button from '.'
 
 storiesOf('button', module).add('default', () => (
-  <button onClick={action('clicked')}>Hello world</button>
+  <Button onClick={action('clicked')}>Hello world</Button>
 ))
