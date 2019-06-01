@@ -23,6 +23,11 @@ const getNamesFromComponentPath = componentPath => {
   }
 }
 
+const webpackConfig = require('mmm-scripts/webpack.config').default({
+  proxy: false,
+  entry: './src/index.tsx',
+})('production')
+
 module.exports = {
   components: 'src/components/*/index.tsx',
   getComponentPathLine: componentPath =>
@@ -96,5 +101,9 @@ module.exports = {
     fontFamily: {
       base: ['Raleway', 'sans-serif'],
     },
+  },
+  webpackConfig: {
+    resolve: webpackConfig.resolve,
+    module: webpackConfig.module,
   },
 }

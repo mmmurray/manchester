@@ -42,6 +42,7 @@
     "husky": "^2.3.0",
     "jest-component-snapshot": "^0.1.2",
     "jest-dom": "^3.4.0",
+    "mmm-scripts": "^0.0.17",
     "puppeteer": "^1.17.0",
     "react-docgen-typescript": "^1.12.4",
     "react-scripts": "3.0.1",
