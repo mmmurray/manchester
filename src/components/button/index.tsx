@@ -6,11 +6,13 @@ type ButtonProps = {
 }
 
 const StyledButton = styled.button`
-  padding: 10px;
-  border: none;
   background: ${({ theme }) => theme.colors.secondaryBackground};
+  border: solid 3px ${({ theme }) => theme.colors.secondaryForeground};
   color: ${({ theme }) => theme.colors.secondaryForeground};
-  font-size: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
 `
 
 const Button: FC<ButtonProps> = ({ onClick, children }) => (

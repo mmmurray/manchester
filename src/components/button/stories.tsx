@@ -4,5 +4,5 @@ import React from 'react'
 import Button from '.'
 
 storiesOf('button', module).add('default', () => (
-  <Button onClick={action('clicked')}>Hello world</Button>
+  <Button onClick={action('click')}>Default button</Button>
 ))
