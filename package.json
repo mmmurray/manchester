@@ -1,6 +1,7 @@
 {
   "name": "manchester",
   "version": "0.0.0",
+  "author": "Mark Murray <mark@murray.xyz>",
   "private": true,
   "repository": "git@github.com:mmmurray/manchester.git",
   "scripts": {
