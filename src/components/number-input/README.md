@@ -1,0 +1,3 @@
+```js
+<NumberInput label="count" />
+```
