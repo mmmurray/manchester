@@ -36,7 +36,9 @@
     "commitizen": "^3.1.1",
     "cz-conventional-changelog": "2.1.0",
     "husky": "^2.3.0",
+    "jest-component-snapshot": "^0.1.2",
     "jest-dom": "^3.4.0",
+    "puppeteer": "^1.17.0",
     "react-scripts": "3.0.1",
     "typescript": "3.5.1"
   },
