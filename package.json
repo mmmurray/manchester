@@ -4,7 +4,6 @@
   "description": "Accessible React component library.",
   "author": "Mark Murray <mark@murray.xyz>",
   "license": "MIT",
-  "private": true,
   "repository": "git@github.com:mmmurray/manchester.git",
   "homepage": "https://mark.murray.xyz/manchester/",
   "keywords": [
