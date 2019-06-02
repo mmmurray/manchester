@@ -16,7 +16,7 @@ const TextInput: FC<TextInputProps> = ({
     label={label}
     inputProps={{
       type: 'text',
-      value,
+      value: value ? String(value) : '',
       onChange: ({ target: { value } }) => onChange(value),
     }}
   />
