@@ -34,6 +34,7 @@ module.exports = {
     `import { ${
       getNamesFromComponentPath(componentPath).displayName
     } } from 'manchester'`,
+  previewDelay: 0,
   propsParser: (componentPath, ...rest) => {
     const parsed = require('react-docgen-typescript')
       .withDefaultConfig()
