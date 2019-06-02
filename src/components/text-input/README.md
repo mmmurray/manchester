@@ -1,7 +1,17 @@
 ```js
-<TextInput label="Name" />
+initialState = { value: undefined }
+;<TextInput
+  label="Name"
+  value={state.value}
+  onChange={value => setState({ value })}
+/>
 ```
 
 ```js
-<TextInput label="Name" value="Alan Turing" />
+initialState = { value: 'Alan Turing' }
+;<TextInput
+  label="Name"
+  value={state.value}
+  onChange={value => setState({ value })}
+/>
 ```

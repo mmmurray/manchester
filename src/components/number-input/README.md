@@ -1,7 +1,17 @@
 ```js
-<NumberInput label="Count" />
+initialState = { value: undefined }
+;<NumberInput
+  label="Count"
+  value={state.value}
+  onChange={value => setState({ value })}
+/>
 ```
 
 ```js
-<NumberInput label="Count" value={22} />
+initialState = { value: 22 }
+;<NumberInput
+  label="Count"
+  value={state.value}
+  onChange={value => setState({ value })}
+/>
 ```
