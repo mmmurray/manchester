@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "repository": "git@github.com:mmmurray/manchester.git",
+  "homepage": "https://mark.murray.xyz/manchester/",
   "keywords": [
     "accessible",
     "react",
