@@ -13,6 +13,11 @@ const StyledButton = styled.button`
   font-size: 16px;
   font-weight: bold;
   padding: 10px;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.primaryAccent};
+    border-color: ${({ theme }) => theme.colors.primaryAccent};
+  }
 `
 
 const Button: FC<ButtonProps> = ({ onClick = () => {}, children }) => (

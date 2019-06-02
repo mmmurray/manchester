@@ -20,16 +20,16 @@ const StyledLabel = styled.label`
 const StyledTextInput = styled.input`
   background: transparent;
   border: none;
-  border-bottom: solid 3px ${({ theme }) => theme.colors.secondarySupplementary};
+  border-bottom: solid 3px ${({ theme }) => theme.colors.secondaryForeground};
   color: ${({ theme }) => theme.colors.secondaryForeground};
   display: block;
   font-size: 24px;
   width: 100%;
   transition: border ${transitionTime}s;
 
-  &:focus,
-  &:not([value='']) {
-    border-bottom-color: ${({ theme }) => theme.colors.secondaryForeground};
+  &:focus {
+    border-bottom-color: ${({ theme }) => theme.colors.primaryAccent};
+    outline: none;
   }
 `
 

@@ -5,6 +5,7 @@ const defaultTheme: DefaultTheme = {
     primaryBackground: '#222',
     primaryForeground: '#fff',
     primarySupplementary: '#ccc',
+    primaryAccent: '#c0ff29',
     secondaryBackground: '#333',
     secondaryForeground: '#fff',
     secondarySupplementary: '#ccc',

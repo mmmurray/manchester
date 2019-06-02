@@ -30,6 +30,12 @@ const StyledSelect = styled.select`
   font-size: 16px;
   font-weight: bold;
   padding: 10px;
+
+  &:focus {
+    border-color: ${({ theme }) => theme.colors.primaryAccent};
+    color: ${({ theme }) => theme.colors.primaryAccent};
+    outline: none;
+  }
 `
 
 const Arrow = styled.div`
@@ -42,6 +48,10 @@ const Arrow = styled.div`
   right: 12px;
   top: calc(50% - 4px);
   width: 0;
+
+  ${StyledSelect}:focus + & {
+    border-top-color: ${({ theme }) => theme.colors.primaryAccent};
+  }
 `
 
 const SelectInput: FC<SelectInputProps> = ({
