@@ -160,6 +160,8 @@ module.exports = {
     },
     Playground: {
       preview: {
+        background: '#222',
+        overflow: 'auto',
         padding: 0,
       },
     },
