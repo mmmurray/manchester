@@ -9,14 +9,14 @@ type TextInputProps = {
 
 const TextInput: FC<TextInputProps> = ({
   label,
-  value,
+  value = '',
   onChange = () => {},
 }) => (
   <BaseInput
     label={label}
     inputProps={{
       type: 'text',
-      value: value ? String(value) : '',
+      value,
       onChange: ({ target: { value } }) => onChange(value),
     }}
   />
