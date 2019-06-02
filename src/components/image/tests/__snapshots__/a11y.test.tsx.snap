@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default image a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: img
+    name: 'Test image description'
+  -
+    role: img
+    name: 'Test image description'
+"
+`;
