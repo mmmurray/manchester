@@ -174,6 +174,7 @@ module.exports = {
     borderRadius: 0,
     sidebarWidth: 300,
     color: {
+      name: '#424242',
       base: '#222',
       light: '#3a3a3a',
       baseBackground: '#dcd6d9',
