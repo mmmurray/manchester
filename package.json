@@ -23,6 +23,7 @@
     "build": "yarn build:lib",
     "commit": "git-cz",
     "jest": "mmm jest",
+    "prepare": "yarn build",
     "release": "semantic-release --dry-run",
     "storybook": "start-storybook -p 6006",
     "styleguide": "styleguidist server",
