@@ -13,8 +13,11 @@ const StyledButton = styled.button`
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+  outline: none;
   padding: 10px;
 
+  &:active,
+  &:focus,
   &:hover {
     color: ${({ theme }) => theme.colors.primaryAccent};
     border-color: ${({ theme }) => theme.colors.primaryAccent};
