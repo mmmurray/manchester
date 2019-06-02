@@ -20,6 +20,7 @@
     "build:lib": "rm -rf ./lib && mmm build",
     "build:storybook": "rm -rf ./dist/storybook && build-storybook -o ./dist/storybook",
     "build:styleguide": "rm -rf ./dist/styleguide && styleguidist build",
+    "build": "yarn build:lib",
     "commit": "git-cz",
     "jest": "mmm jest",
     "storybook": "start-storybook -p 6006",
