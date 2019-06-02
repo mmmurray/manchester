@@ -172,12 +172,13 @@ module.exports = {
     borderRadius: 0,
     sidebarWidth: 300,
     color: {
+      base: '#222',
+      baseBackground: '#dcd6d9',
+      border: '#bdbdbd',
+      link: '#222',
       linkHover: '#ababab',
       ribbonBackground: '#ababab',
-      base: '#222',
-      baseBackground: '#fff',
-      sidebarBackground: '#fff',
-      link: '#222',
+      sidebarBackground: '#dcd6d9',
     },
     fontFamily: {
       base: ['Raleway', 'sans-serif'],
