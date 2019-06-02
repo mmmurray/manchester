@@ -7,15 +7,13 @@
   "private": true,
   "repository": "git@github.com:mmmurray/manchester.git",
   "scripts": {
-    "build-storybook": "build-storybook",
-    "build": "react-scripts build",
+    "build:storybook": "build-storybook",
+    "build:styleguide": "styleguidist build",
     "commit": "git-cz",
-    "eject": "react-scripts eject",
-    "start": "react-scripts start",
+    "jest": "mmm jest",
     "storybook": "start-storybook -p 6006",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "test": "react-scripts test"
+    "test": "mmm coverage"
   },
   "dependencies": {
     "react": "^16.8.6",
@@ -46,27 +44,8 @@
     "mmm-scripts": "^0.0.17",
     "puppeteer": "^1.17.0",
     "react-docgen-typescript": "^1.12.4",
-    "react-scripts": "3.0.1",
     "react-styleguidist": "^9.1.2",
     "typescript": "3.5.1"
-  },
-  "publishConfig": {
-    "access": "restricted"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "config": {
     "commitizen": {
