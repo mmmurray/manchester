@@ -3,6 +3,7 @@
 .pnp.js
 build
 coverage
+lib
 node_modules
 styleguide
 yarn-debug.log*
