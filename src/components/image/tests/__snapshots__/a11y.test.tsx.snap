@@ -5,9 +5,9 @@ exports[`default image a11y: toMatchA11ySnapshot 1`] = `
 children:
   -
     role: img
-    name: 'Test image description'
+    name: 'Manchester skyline'
   -
     role: img
-    name: 'Test image description'
+    name: 'Manchester skyline'
 "
 `;
