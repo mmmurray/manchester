@@ -48,6 +48,7 @@ module.exports = {
   styleguideComponents: {
     Wrapper: join(__dirname, 'src/styleguide-wrapper'),
   },
+  styleguideDir: './dist/styleguide',
   template: {
     lang: 'en-GB',
     head: {

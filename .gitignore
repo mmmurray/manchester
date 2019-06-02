@@ -1,10 +1,9 @@
 .DS_Store
 .pnp
 .pnp.js
-build
 coverage
+dist
 lib
 node_modules
-styleguide
 yarn-debug.log*
 yarn-error.log*
