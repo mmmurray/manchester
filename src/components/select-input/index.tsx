@@ -56,7 +56,7 @@ const Arrow = styled.div`
 
 const SelectInput: FC<SelectInputProps> = ({
   label,
-  value,
+  value = '',
   options,
   onChange = () => {},
 }) => (
