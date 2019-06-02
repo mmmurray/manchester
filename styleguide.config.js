@@ -178,7 +178,7 @@ module.exports = {
       baseBackground: '#dcd6d9',
       border: '#bdbdbd',
       link: '#222',
-      linkHover: '#ababab',
+      linkHover: '#000',
       ribbonBackground: '#ababab',
       sidebarBackground: '#c5c0c3',
     },
