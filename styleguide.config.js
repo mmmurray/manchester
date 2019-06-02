@@ -49,6 +49,7 @@ module.exports = {
     Wrapper: join(__dirname, 'src/styleguide-wrapper'),
   },
   template: {
+    lang: 'en-GB',
     head: {
       links: [
         {
