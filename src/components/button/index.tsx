@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import styled from 'styled-components'
 
 type ButtonProps = {
+  /** Called each time the button is clicked */
   onClick?: () => void
 }
 

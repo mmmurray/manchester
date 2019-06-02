@@ -2,9 +2,16 @@ import React, { FC } from 'react'
 import styled from 'styled-components'
 
 type SelectInputProps = {
+  /** Text describing the purpose of the input */
   label: string
+
+  /** Ordered list containing all options that can be selected */
   options: Array<{ name: string; value: string }>
+
+  /** The current value of the input */
   value?: string
+
+  /** Called with the current value each time it changes */
   onChange?: (value: string) => void
 }
 
