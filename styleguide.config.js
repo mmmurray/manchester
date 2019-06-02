@@ -91,8 +91,8 @@ module.exports = {
     borderRadius: 0,
     sidebarWidth: 300,
     color: {
-      linkHover: '#660099',
-      ribbonBackground: '#660099',
+      linkHover: '#ababab',
+      ribbonBackground: '#ababab',
       base: '#222',
       baseBackground: '#fff',
       sidebarBackground: '#fff',
