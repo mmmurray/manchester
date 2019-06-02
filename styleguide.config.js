@@ -180,7 +180,7 @@ module.exports = {
       link: '#222',
       linkHover: '#ababab',
       ribbonBackground: '#ababab',
-      sidebarBackground: '#dcd6d9',
+      sidebarBackground: '#c5c0c3',
     },
     fontFamily: {
       base: ['Raleway', 'sans-serif'],
