@@ -2203,12 +2203,12 @@
     lodash.unescape "4.0.1"
     semver "5.5.0"
 
-"@vxna/mini-html-webpack-template@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@vxna/mini-html-webpack-template/-/mini-html-webpack-template-0.1.7.tgz#2a8270e513ee14f395cc17c2ce22ced383c45d22"
-  integrity sha512-qV2VslV48ECPwyuG7c4O6JpYgjnvdm88YYkMncIXzakXXwVUxhcg6YipXxWK7U+pixHkWWSnDX/8DIOmWeh+PQ==
+"@vxna/mini-html-webpack-template@1.0.0", "@vxna/mini-html-webpack-template@^0.1.7":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vxna/mini-html-webpack-template/-/mini-html-webpack-template-1.0.0.tgz#66ce883b6e6678e1242ab51da04be21d3f1001bc"
+  integrity sha512-cwlmP9CoWyZYtI33DUKOjS6Hyn3yNrXZQtP+QxPjaRpYNYcbrg+u7EZQZmvB/Mi7qwiDbeTU7UtMT0C5ouRTNA==
   dependencies:
-    common-tags "^1.7.2"
+    common-tags "^1.8.0"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -4273,7 +4273,7 @@ common-sequence@^1.0.2:
   resolved "https://registry.yarnpkg.com/common-sequence/-/common-sequence-1.0.2.tgz#30e07f3f8f6f7f9b3dee854f20b2d39eee086de8"
   integrity sha1-MOB/P49vf5s97oVPILLTnu4Ibeg=
 
-common-tags@^1.7.2, common-tags@^1.8.0:
+common-tags@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
   integrity sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw==
@@ -9403,12 +9403,12 @@ mini-css-extract-plugin@^0.7.0:
     schema-utils "^1.0.0"
     webpack-sources "^1.1.0"
 
-mini-html-webpack-plugin@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/mini-html-webpack-plugin/-/mini-html-webpack-plugin-0.2.3.tgz#2dfbdc3f35f6ae03864a608808381f8137311ea0"
-  integrity sha512-wfkLf+CmyDg++K1S0QdAvUvS29DfVHe9SQ63syX8aX375mInzC5uwHxb/1+3exiiv84xnPrf6zsOnReRe15rjg==
+mini-html-webpack-plugin@1.0.0, mini-html-webpack-plugin@^0.2.3:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mini-html-webpack-plugin/-/mini-html-webpack-plugin-1.0.0.tgz#9e5b9bd7c5ce504856008e979c738de44805dd48"
+  integrity sha512-4VBXB8B4UiD6bRdnIHtHnuQRO64LAQ9A970O+X+/MCII1c+nn5Qi0rpT40a23sSzfnOWxm8RUplbn6M8pU9RbQ==
   dependencies:
-    webpack-sources "^1.1.0"
+    webpack-sources "^1.3.0"
 
 minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
@@ -9520,10 +9520,10 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdi
   dependencies:
     minimist "0.0.8"
 
-mmm-scripts@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/mmm-scripts/-/mmm-scripts-0.4.1.tgz#3731bea7d8a4f08512c60455c71f9468178914cf"
-  integrity sha512-RzcjYuc/bwpDp/+oEu0OYWiLLQxpZiAkt5lR1UI4t6Zv9qQ3kWVw6I+UjPeq3e7nGPJ6KeZN4rex/K3/Qe7jAw==
+mmm-scripts@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/mmm-scripts/-/mmm-scripts-0.4.2.tgz#6474d728766c3d050a99d80ce10220c9e42bcc6e"
+  integrity sha512-SC5ijKt5QH9amwZgYPWPVOsnM9GwRUDyJo8HmwV7wvF5iJ/v0she1mxs6ciQHReVFl8VA60cp2Z1aP/ASerWFA==
   dependencies:
     "@babel/core" "7.4.5"
     "@babel/plugin-proposal-class-properties" "7.4.4"
