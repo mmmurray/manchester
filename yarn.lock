@@ -7913,9 +7913,9 @@ jest-cli@^24.8.0:
     yargs "^12.0.2"
 
 jest-component-snapshot@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/jest-component-snapshot/-/jest-component-snapshot-0.1.3.tgz#05652a2955e824912e2938dadc3311bf4178d225"
-  integrity sha512-hko9N8mClg8VxgRcdRSjeQC/CRWYhOlk/eU3ftdmG/oVQuWWiHINEKtQT3uvGzISjDgj4PplbAx1OOmylcFSvQ==
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/jest-component-snapshot/-/jest-component-snapshot-0.1.4.tgz#e15031aa31d6d099b707119c3e4214e56ea8ce4a"
+  integrity sha512-SsqbKZNCoUx7xxXCCxwkURjb44epG2AT/l7XpmdSZUu2z9B9QrdTSdO7DGHBtDaMHwr6cQnAkW+wiM0CeVE0Tw==
   dependencies:
     fs-extra "^8.0.1"
     jest-image-snapshot "^2.8.2"
