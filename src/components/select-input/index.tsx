@@ -6,7 +6,7 @@ type SelectInputProps = {
   label: string
 
   /** Ordered list containing all options that can be selected */
-  options: Array<{ name: string; value: string }>
+  options: { name: string; value: string }[]
 
   /** The current value of the input */
   value?: string
