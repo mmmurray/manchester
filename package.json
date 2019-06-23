@@ -16,17 +16,17 @@
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
-    "build:lib": "rm -rf ./lib && mmm build",
+    "build": "mmm build",
     "build:storybook": "rm -rf ./dist/storybook && build-storybook -o ./dist/storybook",
     "build:styleguide": "rm -rf ./dist/styleguide && styleguidist build",
-    "build": "yarn build:lib",
-    "commit": "git-cz",
+    "commit": "mmm commit",
     "jest": "mmm jest",
-    "prepare": "yarn build",
-    "release": "semantic-release --dry-run",
+    "release": "mmm release",
     "storybook": "start-storybook -p 6006",
     "styleguide": "styleguidist server",
-    "test": "mmm coverage"
+    "test": "mmm test",
+    "test:coverage": "mmm test:coverage",
+    "test:lint": "mmm test:lint"
   },
   "dependencies": {
     "react": "^16.8.6",
@@ -54,7 +54,7 @@
     "husky": "^2.3.0",
     "jest-component-snapshot": "^0.1.3",
     "jest-dom": "^3.4.0",
-    "mmm-scripts": "^0.0.20",
+    "mmm-scripts": "^0.3.0",
     "puppeteer": "^1.17.0",
     "react-docgen-typescript": "^1.12.4",
     "react-styleguidist": "^9.1.2",
@@ -71,13 +71,13 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "eslintConfig": {
+    "extends": "eslint-config-mmm/ts-react"
+  },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "mmm precommit"
     }
   },
-  "resolutions": {
-    "react-styleguidist/@vxna/mini-html-webpack-template": "1.0.0",
-    "react-styleguidist/mini-html-webpack-plugin": "1.0.0"
-  }
+  "prettier": "mmm-scripts/prettier.config"
 }
