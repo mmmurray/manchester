@@ -7,6 +7,9 @@
   <a href="https://travis-ci.com/mmmurray/manchester">
     <img alt="Travis" src="https://travis-ci.com/mmmurray/manchester.svg?branch=master">
   </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg">
+  </a>
 </p>
 <h2 align="center">
 <a style="font-size: 24px" href="https://mark.murray.xyz/manchester/">https://mark.murray.xyz/manchester/</a>
