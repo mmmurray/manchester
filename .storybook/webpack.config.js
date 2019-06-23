@@ -1,7 +1,6 @@
-const webpackConfig = require('mmm-scripts/webpack.config').default({
-  proxy: false,
-  entry: './src/index.tsx',
-})('production')
+const webpackConfig = require('mmm-scripts/webpack.config').default(
+  'production',
+)
 
 module.exports = ({ config }) => {
   config.resolve = webpackConfig.resolve

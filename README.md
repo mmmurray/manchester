@@ -4,8 +4,8 @@
   <a href="https://www.npmjs.com/package/manchester">
     <img alt="Gitter" src="https://img.shields.io/npm/v/manchester.svg">
   </a>
-  <a href="https://travis-ci.org/mmmurray/manchester">
-    <img alt="Travis" src="https://img.shields.io/travis/mmmurray/manchester.svg">
+  <a href="https://travis-ci.com/mmmurray/manchester">
+    <img alt="Travis" src="https://travis-ci.com/mmmurray/manchester.svg?branch=master">
   </a>
 </p>
 <h2 align="center">

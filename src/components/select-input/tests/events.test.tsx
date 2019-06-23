@@ -10,12 +10,8 @@ const options = [
 
 test('can handle change events', () => {
   const onChange = jest.fn()
-  const { getByLabelText, container } = render(
+  const { getByLabelText } = render(
     <SelectInput label="test input" options={options} onChange={onChange} />,
-  )
-
-  const x = Array.from(container.querySelectorAll('label')).map(
-    l => l.textContent,
   )
 
   fireEvent.change(getByLabelText(/^test input/), { target: { value: 'b' } })
