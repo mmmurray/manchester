@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checked toggle input a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: checkbox
+    name: test
+    checked: true
+"
+`;
+
+exports[`default toggle input a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: checkbox
+    name: test
+    checked: false
+"
+`;
