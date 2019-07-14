@@ -25,6 +25,7 @@
     "storybook": "start-storybook -p 6006",
     "styleguide": "styleguidist server",
     "test": "mmm test",
+    "test:compile": "mmm test:compile",
     "test:coverage": "mmm test:coverage",
     "test:lint": "mmm test:lint"
   },
