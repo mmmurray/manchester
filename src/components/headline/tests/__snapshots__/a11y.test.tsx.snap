@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default headline a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: heading
+    name: 'test headline'
+    level: 1
+    children:
+      -
+        role: text
+        name: 'test headline'
+"
+`;
