@@ -1,11 +1,17 @@
 import { addDecorator, addParameters, configure } from '@storybook/react'
 import { themes } from '@storybook/theming'
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import Global from '../src/global'
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { defaultTheme } from '../src/theme'
 
 const req = require.context('../src/components', true, /\/stories.tsx$/)
+
+const Global = createGlobalStyle`
+  body {
+    background-color: ${({ theme }) => theme.colors.primaryBackground};
+    color: ${({ theme }) => theme.colors.primaryForeground};
+  }
+`
 
 const ThemeDecorator = storyFn => (
   <ThemeProvider theme={defaultTheme}>
