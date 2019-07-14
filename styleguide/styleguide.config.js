@@ -1,4 +1,4 @@
-const { join } = require('path')
+const { join } = require('path') // eslint-disable-line @typescript-eslint/no-var-requires
 
 const kebabToPascal = str => {
   const [first, ...rest] = str.replace(/([-][a-z])/g, group =>
