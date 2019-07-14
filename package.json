@@ -38,16 +38,16 @@
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
-    "@testing-library/react": "^8.0.1",
+    "@testing-library/react": "^8.0.5",
     "@types/storybook__addon-actions": "^3.4.3",
     "@types/storybook__react": "^4.0.2",
     "@types/styled-components": "^4.1.16",
     "babel-loader": "^8.0.5",
     "jest-component-snapshot": "^0.1.4",
-    "mmm-scripts": "^0.4.2",
+    "mmm-scripts": "^0.6.1",
     "puppeteer": "^1.18.0",
     "react-docgen-typescript": "^1.12.5",
-    "react-styleguidist": "^9.1.9"
+    "react-styleguidist": "^9.1.11"
   },
   "resolutions": {
     "react-styleguidist/@vxna/mini-html-webpack-template": "1.0.0",
