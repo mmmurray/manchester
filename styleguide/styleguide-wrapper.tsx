@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
-import { defaultTheme } from './theme'
+import { defaultTheme } from '../src/theme'
 
 const FauxGlobal = styled.div`
   color: ${({ theme }) => theme.colors.primaryForeground};

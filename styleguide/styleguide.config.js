@@ -28,7 +28,7 @@ const webpackConfig = require('mmm-scripts/webpack.config').default(
 )
 
 module.exports = {
-  components: 'src/components/*/index.tsx',
+  components: '../src/components/*/index.tsx',
   getComponentPathLine: componentPath =>
     `import { ${
       getNamesFromComponentPath(componentPath).displayName
@@ -45,9 +45,9 @@ module.exports = {
     }))
   },
   styleguideComponents: {
-    Wrapper: join(__dirname, 'src/styleguide-wrapper'),
+    Wrapper: join(__dirname, './styleguide-wrapper'),
   },
-  styleguideDir: './dist/styleguide',
+  styleguideDir: '../dist/styleguide',
   template: {
     lang: 'en-GB',
     head: {
