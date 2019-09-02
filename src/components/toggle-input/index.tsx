@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const DIAMETER = 24
 const THROW = DIAMETER
 const TRANSISITION_SPEED = 0.2
-const BORDER = DIAMETER / 20
+const BORDER = DIAMETER / 12
 const KNOB_DIAMETER = DIAMETER - BORDER * 2
 
 type ToggleInputProps = {
