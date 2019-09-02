@@ -4,9 +4,14 @@ exports[`checked toggle input a11y: toMatchA11ySnapshot 1`] = `
 "role: WebArea
 children:
   -
-    role: checkbox
-    name: test
-    checked: true
+    role: Label
+    children:
+      -
+        role: checkbox
+        name: test
+        checked: true
+      -
+        role: GenericContainer
 "
 `;
 
@@ -14,8 +19,13 @@ exports[`default toggle input a11y: toMatchA11ySnapshot 1`] = `
 "role: WebArea
 children:
   -
-    role: checkbox
-    name: test
-    checked: false
+    role: Label
+    children:
+      -
+        role: checkbox
+        name: test
+        checked: false
+      -
+        role: GenericContainer
 "
 `;
