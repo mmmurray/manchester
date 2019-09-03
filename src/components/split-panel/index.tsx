@@ -5,6 +5,7 @@ type SplitPanelProps = {
   leftPanel?: ReactNode
   rightPanel?: ReactNode
   division?: number
+  defaultDivision?: number
   minimumDivision?: number
   maximumDivision?: number
   onDivisionChange?(division: number): void
@@ -60,6 +61,7 @@ const SplitPanel: FC<SplitPanelProps> = ({
   leftPanel,
   rightPanel,
   division = 0.5,
+  defaultDivision,
   minimumDivision = 0,
   maximumDivision = 1,
   onDivisionChange,
@@ -109,12 +111,19 @@ const SplitPanel: FC<SplitPanelProps> = ({
     [division, onDivisionChange, containerRef],
   )
 
+  const onDoubleClick = useCallback(() => {
+    if (onDivisionChange && defaultDivision !== undefined) {
+      onDivisionChange(defaultDivision)
+    }
+  }, [onDivisionChange, defaultDivision])
+
   return (
     <StyledContainer ref={containerRef} division={division}>
       <StyledPanelContainer>{leftPanel}</StyledPanelContainer>
       <StyledDivider
         data-testid="manchester-split-panel-divider"
         onMouseDown={onMouseDown}
+        onDoubleClick={onDoubleClick}
       />
       <StyledPanelContainer>{rightPanel}</StyledPanelContainer>
     </StyledContainer>

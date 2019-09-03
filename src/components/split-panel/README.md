@@ -23,6 +23,7 @@ initialState = { division: 0.4 }
   }
   minimumDivision={0.1}
   maximumDivision={0.9}
+  defaultDivision={0.5}
   division={state.division}
   onDivisionChange={division => setState({ division })}
 />
