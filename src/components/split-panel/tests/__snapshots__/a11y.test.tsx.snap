@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default split panel a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: GenericContainer
+    children:
+      -
+        role: GenericContainer
+"
+`;
