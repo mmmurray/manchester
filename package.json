@@ -44,7 +44,7 @@
     "@types/storybook__react": "^4.0.2",
     "@types/styled-components": "^4.1.16",
     "babel-loader": "^8.0.5",
-    "jest-component-snapshot": "^0.1.4",
+    "jest-component-snapshot": "^0.2.1",
     "mmm-scripts": "^0.6.4",
     "puppeteer": "^1.19.0",
     "react-docgen-typescript": "^1.14.0",
