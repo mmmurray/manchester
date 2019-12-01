@@ -4,19 +4,20 @@ import styled from 'styled-components'
 type SplitPanelProps = {
   leftPanel?: ReactNode
   rightPanel?: ReactNode
-  division?: number
-  defaultDivision?: number
-  minimumDivision?: number
-  maximumDivision?: number
-  onDivisionChange?(division: number): void
+  leftSize?: number
+  defaultLeftSize?: number
+  maxLeftSize?: number
+  minLeftSize?: number
+  onSizeChange?(left: number): void
 }
 
 const dragCursor = 'ew-resize'
+const dividerWidth = 12
 
 const StyledContainer = styled.div.attrs<{ division: number }>(
   ({ division }) => ({
     style: {
-      gridTemplateColumns: `${division}fr auto ${1 - division}fr`,
+      gridTemplateColumns: `${division}px ${dividerWidth}px 1fr`,
     },
   }),
 )<{ division: number }>`
@@ -30,16 +31,16 @@ const StyledDivider = styled.div`
   cursor: ${dragCursor};
   display: flex;
   justify-content: center;
-  width: 12px;
+  width: ${dividerWidth}px;
   transition: opacity 0.2s;
   opacity: 0.5;
 
   &::before {
-    background: ${({ theme }) => theme.colors.secondaryForeground};
+    background: ${({ theme }) => theme.mutedForegroundColor};
     border-radius: 2px;
     content: '';
     display: block;
-    height: 40px;
+    height: 100px;
     width: 4px;
   }
 
@@ -50,27 +51,39 @@ const StyledDivider = styled.div`
 
 const StyledPanelContainer = styled.div`
   height: 100%;
-  overflow: hidden;
+  overflow: hidden auto;
   width: 100%;
+
+  & > * {
+    height: auto;
+    min-height: 100%;
+  }
 `
 
-const clamp = (value: number, min: number, max: number) =>
-  value < min ? min : value > max ? max : value
+const clamp = (value: number, min?: number, max?: number) => {
+  if (min !== undefined && value < min) {
+    return min
+  }
+  if (max !== undefined && value > max) {
+    return max
+  }
+  return value
+}
 
 const SplitPanel: FC<SplitPanelProps> = ({
   leftPanel,
   rightPanel,
-  division = 0.5,
-  defaultDivision,
-  minimumDivision = 0,
-  maximumDivision = 1,
-  onDivisionChange,
+  leftSize = 0,
+  defaultLeftSize,
+  minLeftSize,
+  maxLeftSize,
+  onSizeChange,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null)
 
   const onMouseDown = useCallback(
     (mouseDownEvent: React.MouseEvent<HTMLDivElement>) => {
-      if (!containerRef.current || !onDivisionChange) {
+      if (!containerRef.current || !onSizeChange) {
         return
       }
 
@@ -84,17 +97,17 @@ const SplitPanel: FC<SplitPanelProps> = ({
       document.body.style.userSelect = 'none'
 
       const startX = mouseDownEvent.screenX
-      const width = containerRef.current.clientWidth
+      const availableWidth = containerRef.current.clientWidth - dividerWidth
 
       const onMouseMove = (mouseMoveEvent: MouseEvent) => {
-        const currentX = width * division
+        const currentX = leftSize
         const deltaX = mouseMoveEvent.screenX - startX
         const newDivision = clamp(
-          (currentX + deltaX) / width,
-          clamp(minimumDivision, 0, 1),
-          clamp(maximumDivision, 0, 1),
+          currentX + deltaX,
+          clamp(minLeftSize || 0, 0, availableWidth),
+          clamp(maxLeftSize || availableWidth, 0, availableWidth),
         )
-        onDivisionChange(newDivision)
+        onSizeChange(newDivision)
       }
 
       const onMouseUp = () => {
@@ -108,17 +121,17 @@ const SplitPanel: FC<SplitPanelProps> = ({
       document.addEventListener('mousemove', onMouseMove)
       document.addEventListener('mouseup', onMouseUp)
     },
-    [division, onDivisionChange, containerRef],
+    [leftSize, onSizeChange, containerRef],
   )
 
   const onDoubleClick = useCallback(() => {
-    if (onDivisionChange && defaultDivision !== undefined) {
-      onDivisionChange(defaultDivision)
+    if (onSizeChange && defaultLeftSize !== undefined) {
+      onSizeChange(defaultLeftSize)
     }
-  }, [onDivisionChange, defaultDivision])
+  }, [onSizeChange, defaultLeftSize])
 
   return (
-    <StyledContainer ref={containerRef} division={division}>
+    <StyledContainer ref={containerRef} division={leftSize}>
       <StyledPanelContainer>{leftPanel}</StyledPanelContainer>
       <StyledDivider
         data-testid="manchester-split-panel-divider"
@@ -129,5 +142,7 @@ const SplitPanel: FC<SplitPanelProps> = ({
     </StyledContainer>
   )
 }
+
+SplitPanel.displayName = 'SplitPanel'
 
 export default SplitPanel

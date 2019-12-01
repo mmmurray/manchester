@@ -8,3 +8,12 @@ children:
     name: 'test button'
 "
 `;
+
+exports[`full width button a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: button
+    name: 'test button'
+"
+`;

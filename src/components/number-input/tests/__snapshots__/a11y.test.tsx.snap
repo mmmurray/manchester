@@ -4,16 +4,13 @@ exports[`default number input a11y: toMatchA11ySnapshot 1`] = `
 "role: WebArea
 children:
   -
-    role: GenericContainer
+    role: Label
     children:
       -
-        role: Label
-        children:
-          -
-            role: spinbutton
-            name: test
-          -
-            role: text
-            name: test
+        role: spinbutton
+        name: test
+      -
+        role: text
+        name: test
 "
 `;

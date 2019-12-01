@@ -1,15 +1,21 @@
-import { DefaultTheme } from 'styled-components'
+import { useContext } from 'react'
+import { DefaultTheme, ThemeContext } from 'styled-components'
+import { palette } from './palette'
 
 const defaultTheme: DefaultTheme = {
-  colors: {
-    primaryBackground: '#222',
-    primaryForeground: '#fff',
-    primarySupplementary: '#ccc',
-    primaryAccent: '#c0ff29',
-    secondaryBackground: '#333',
-    secondaryForeground: '#fff',
-    secondarySupplementary: '#ccc',
-  },
+  accentColor: palette['Nuclear Green'],
+  backgroundColor: palette['Slate Grey'],
+  foregroundColor: palette['Pure White'],
+  mutedForegroundColor: palette['Ash Grey'],
+  layers: [
+    {
+      backgroundColor: palette['Concrete Grey'],
+      foregroundColor: palette['Slate Grey'],
+      mutedForegroundColor: palette['Pure White'],
+    },
+  ],
 }
 
-export { defaultTheme }
+const useTheme = () => useContext(ThemeContext)
+
+export { defaultTheme, useTheme }

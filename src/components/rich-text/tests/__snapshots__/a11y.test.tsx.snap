@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default rich text a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: heading
+    name: Hello
+    level: 1
+    children:
+      -
+        role: text
+        name: Hello
+  -
+    role: heading
+    name: World
+    level: 2
+    children:
+      -
+        role: text
+        name: World
+  -
+    role: paragraph
+    children:
+      -
+        role: text
+        name: 'Lorem ipsum'
+"
+`;

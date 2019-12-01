@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default selectable list a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: list
+    children:
+      -
+        role: listitem
+        children:
+          -
+            role: button
+            name: 'Item 1'
+      -
+        role: listitem
+        children:
+          -
+            role: button
+            name: 'Item 2'
+      -
+        role: listitem
+        children:
+          -
+            role: button
+            name: 'Item 3'
+"
+`;
+
+exports[`selectable list with button accessories a11y: toMatchA11ySnapshot 1`] = `
+"role: WebArea
+children:
+  -
+    role: list
+    children:
+      -
+        role: listitem
+        children:
+          -
+            role: button
+            name: 'Item 1'
+          -
+            role: button
+            name: B1
+      -
+        role: listitem
+        children:
+          -
+            role: button
+            name: 'Item 2'
+          -
+            role: button
+            name: B2
+      -
+        role: listitem
+        children:
+          -
+            role: button
+            name: 'Item 3'
+          -
+            role: button
+            name: B3
+"
+`;

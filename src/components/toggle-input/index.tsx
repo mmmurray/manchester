@@ -41,10 +41,9 @@ const Input = styled.input`
 `
 
 const Rail = styled.label`
-  background: ${({ theme }) => theme.colors.primaryAccent};
+  background: ${({ theme }) => theme.accentColor};
   border-radius: ${DIAMETER / 2}px;
-  box-shadow: 0 0 0 ${BORDER}px
-    ${({ theme }) => theme.colors.secondaryForeground} inset;
+  box-shadow: 0 0 0 ${BORDER}px currentColor inset;
   cursor: pointer;
   display: block;
   height: ${DIAMETER}px;
@@ -54,7 +53,7 @@ const Rail = styled.label`
 `
 
 const Cover = styled.div`
-  background: ${({ theme }) => theme.colors.secondaryForeground};
+  background: currentColor;
   height: ${DIAMETER}px;
   left: ${KNOB_DIAMETER / 2}px;
   padding: ${BORDER}px 0 0 ${BORDER}px;
@@ -64,7 +63,7 @@ const Cover = styled.div`
 `
 
 const Knob = styled.div`
-  background: ${({ theme }) => theme.colors.secondaryBackground};
+  background: ${({ theme }) => theme.backgroundColor};
   border-radius: ${KNOB_DIAMETER / 2}px;
   height: ${KNOB_DIAMETER}px;
   position: relative;
@@ -89,5 +88,7 @@ const ToggleInput: FC<ToggleInputProps> = ({
     </Cover>
   </Rail>
 )
+
+ToggleInput.displayName = 'ToggleInput'
 
 export default ToggleInput

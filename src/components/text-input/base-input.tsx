@@ -20,15 +20,15 @@ const StyledLabel = styled.label`
 const StyledTextInput = styled.input`
   background: transparent;
   border: none;
-  border-bottom: solid 3px ${({ theme }) => theme.colors.secondaryForeground};
-  color: ${({ theme }) => theme.colors.secondaryForeground};
+  border-bottom: solid 3px currentColor;
+  color: inherit;
   display: block;
   font-size: 24px;
   width: 100%;
   transition: border ${transitionTime}s;
 
   &:focus {
-    border-bottom-color: ${({ theme }) => theme.colors.primaryAccent};
+    border-bottom-color: ${({ theme }) => theme.accentColor};
     outline: none;
   }
 `
@@ -41,7 +41,7 @@ const StyledLabelSpan = styled.span`
   top: 0;
   transform-origin: top left;
   transition: transform ${transitionTime}s, color ${transitionTime}s;
-  color: ${({ theme }) => theme.colors.secondarySupplementary};
+  color: ${({ theme }) => theme.mutedForegroundColor};
 
   ${StyledTextInput}:focus + &,
   ${StyledTextInput}:not([value=""]) + & {
