@@ -4,9 +4,10 @@ exports[`default split panel a11y: toMatchA11ySnapshot 1`] = `
 "role: WebArea
 children:
   -
-    role: GenericContainer
-    children:
-      -
-        role: GenericContainer
+    role: text
+    name: 'Test Left Panel'
+  -
+    role: text
+    name: 'Test Right Panel'
 "
 `;

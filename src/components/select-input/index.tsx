@@ -22,16 +22,17 @@ const StyledLabel = styled.label`
 `
 
 const StyledLabelSpan = styled.span`
+  color: inherit;
   font-size: 16px;
   margin-right: 10px;
 `
 
 const StyledSelect = styled.select`
   appearance: none;
-  background: ${({ theme }) => theme.colors.secondaryBackground};
+  background: transparent;
   border-radius: 0;
-  border: solid 3px ${({ theme }) => theme.colors.secondaryForeground};
-  color: ${({ theme }) => theme.colors.secondaryForeground};
+  border: solid 3px currentColor;
+  color: inherit;
   display: block;
   flex-grow: 1;
   font-size: 16px;
@@ -39,8 +40,8 @@ const StyledSelect = styled.select`
   padding: 10px;
 
   &:focus {
-    border-color: ${({ theme }) => theme.colors.primaryAccent};
-    color: ${({ theme }) => theme.colors.primaryAccent};
+    border-color: ${({ theme }) => theme.accentColor};
+    color: ${({ theme }) => theme.accentColor};
     outline: none;
   }
 `
@@ -48,7 +49,7 @@ const StyledSelect = styled.select`
 const Arrow = styled.div`
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid ${({ theme }) => theme.colors.secondaryForeground};
+  border-top: 8px solid currentColor;
   height: 0;
   pointer-events: none;
   position: absolute;
@@ -57,7 +58,7 @@ const Arrow = styled.div`
   width: 0;
 
   ${StyledSelect}:focus + & {
-    border-top-color: ${({ theme }) => theme.colors.primaryAccent};
+    border-top-color: ${({ theme }) => theme.accentColor};
   }
 `
 
@@ -82,5 +83,7 @@ const SelectInput: FC<SelectInputProps> = ({
     <Arrow />
   </StyledLabel>
 )
+
+SelectInput.displayName = 'SelectInput'
 
 export default SelectInput

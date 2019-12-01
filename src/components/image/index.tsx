@@ -25,4 +25,6 @@ const Image: FC<ImageProps> = ({ image, baseUrl, description, preview }) => (
   </ImageProvider>
 )
 
+Image.displayName = 'Image'
+
 export default Image

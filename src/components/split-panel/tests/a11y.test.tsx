@@ -5,7 +5,10 @@ import { Wrapper } from '../../../test-utils'
 test('default split panel a11y', async () => {
   await expect(
     <Wrapper>
-      <SplitPanel />
+      <SplitPanel
+        leftPanel={<div>Test Left Panel</div>}
+        rightPanel={<div>Test Right Panel</div>}
+      />
     </Wrapper>,
   ).toMatchA11ySnapshot()
 })
